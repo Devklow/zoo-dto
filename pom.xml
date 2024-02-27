@@ -18,8 +18,8 @@
         <sonar.projectKey>zoo-dto</sonar.projectKey>
         <sonar.projectName>zoo-dto</sonar.projectName>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
-        <sonar.exclusions>**CageInfos.*</sonar.exclusions>
-        <sonar.coverage.exclusions>**CageInfos.*</sonar.coverage.exclusions>
+        <sonar.exclusions>**CageInfos.*, **module-info.*</sonar.exclusions>
+        <sonar.coverage.exclusions>**CageInfos.*, **module-info.*</sonar.coverage.exclusions>
         <!--suppress UnresolvedMavenProperty -->
         <sonar.token>${env.SONAR_TOKEN}</sonar.token>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
@@ -64,6 +64,12 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <excludes>
+                        <exclude>**module-info.*</exclude>
+                        <exclude>**CageInfos.*</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
