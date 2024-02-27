@@ -15,8 +15,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--suppress UnresolvedMavenProperty -->
         <sonar.host.url>${env.SONAR_HOST}</sonar.host.url>
-        <sonar.projectKey>zoo-model</sonar.projectKey>
-        <sonar.projectName>zoo-model</sonar.projectName>
+        <sonar.projectKey>zoo-dto</sonar.projectKey>
+        <sonar.projectName>zoo-dto</sonar.projectName>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
         <sonar.exclusions>**CageInfos.*</sonar.exclusions>
         <sonar.coverage.exclusions>**CageInfos.*</sonar.coverage.exclusions>
