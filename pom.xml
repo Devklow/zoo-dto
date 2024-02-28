@@ -6,7 +6,7 @@
 
     <groupId>org.formation.labbe.zoo</groupId>
     <artifactId>dto</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>dto</name>
 
     <properties>
@@ -18,8 +18,8 @@
         <sonar.projectKey>zoo-dto</sonar.projectKey>
         <sonar.projectName>zoo-dto</sonar.projectName>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
-        <sonar.exclusions>**CageInfos.*, **module-info.*</sonar.exclusions>
-        <sonar.coverage.exclusions>**CageInfos.*, **module-info.*</sonar.coverage.exclusions>
+        <sonar.exclusions>**CageInfos.*, **module-info.*, **Devorer.*</sonar.exclusions>
+        <sonar.coverage.exclusions>**CageInfos.*, **module-info.*, **Devorer.*</sonar.coverage.exclusions>
         <!--suppress UnresolvedMavenProperty -->
         <sonar.token>${env.SONAR_TOKEN}</sonar.token>
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
@@ -68,6 +68,7 @@
                     <excludes>
                         <exclude>**module-info.*</exclude>
                         <exclude>**CageInfos.*</exclude>
+                        <exclude>**Devorer.*</exclude>
                     </excludes>
                 </configuration>
             </plugin>
